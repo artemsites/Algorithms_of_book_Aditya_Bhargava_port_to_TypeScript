@@ -1,0 +1,10 @@
+{
+  "scripts": {
+    "serve": "npx tsc --watch",
+    "tslint": "tslint --project tsconfig.json",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "tslint": "^5.20.1"
+  }
+}

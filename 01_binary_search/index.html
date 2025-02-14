@@ -8,35 +8,7 @@
 </head>
 
 <body>
-  <script>
-    const arr = [1, 5, 7, 9, 11, 55, 66, 75, 89, 95, 101, 115, 128] // упорядоченный список
-    const search = 89
-
-    console.log('arr: ', arr)
-    console.log('search: ', search)
-    console.log('Позиция искомого числа в массиве = ', binary_search(arr, search))
-
-    function binary_search(arr, search) {
-      let low = 0
-      let high = arr.length - 1
-
-      while (low <= high) {
-        const middle = Math.ceil((low + high) / 2)
-
-        const guess = arr[middle]
-
-        if (guess == search) {
-          return middle
-        } else if (guess > search) {
-          high = middle - 1
-        } else {
-          low = middle + 1
-        }
-      }
-
-      return null
-    }
-  </script>
+  <script src="./index.js"></script>
 </body>
 
 </html>
